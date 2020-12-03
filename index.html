@@ -5,5 +5,15 @@
   </head>
   <body>
     <h1>Welcome to my website!</h1>
+    
+    <p id="description">this is desctiption</p>
+
+    <script>
+      {$.get("./blogpost.txt", function(data) {
+        document.getElementById("description").src=data;
+      });
+      }
+
+    </script>
   </body>
 </html>

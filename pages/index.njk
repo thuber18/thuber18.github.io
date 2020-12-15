@@ -10,15 +10,6 @@
   <!-- Importing Nunjucks Macro -->
   {% import 'macros/nav-macro.njk' as nav %}
   <!-- Creating the navigation with activePage = 'home' -->
-  {{nav.active('contact')}}
-
-  <div class="gallery">
-    <!-- Loops through "images" array -->
-    {% for image in images %}
-    <div class="gallery__item">
-      <img src="{{image.src}}" alt="{{image.alt}}">
-    </div>
-    {% endfor %}
-  </div>
+  {{nav.active('home')}}
 
 {% endblock %}

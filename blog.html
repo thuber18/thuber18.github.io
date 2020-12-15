@@ -1,0 +1,58 @@
+<!-- layout.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- You write code for this content block in another file -->
+    <div>
+      
+  <h1>This is the blog page</h1>
+
+  <!-- Importing Nunjucks Macro -->
+  
+  <!-- Creating the navigation with activePage = 'home' -->
+  
+<nav>
+  <a href="#" class="">Home</a>
+  <a href="#" class="">About</a>
+  <a href="#" class="">Contact</a>
+  <a href="/blog" class="active">Blog</a>
+</nav>
+
+
+  <div class="gallery">
+    <!-- Loops through "images" array -->
+    
+    <div class="gallery__item">
+      <img src="images/image-one.png" alt="Image one alt text">
+    </div>
+    
+    <div class="gallery__item">
+      <img src="images/image-two.png" alt="Image two alt text">
+    </div>
+    
+  </div>
+
+  <div class="blog_posts">
+    <!-- Loops through "images" array -->
+    
+    <div class="blog_post">
+      <div><object data="blog/1.html"></object></div>
+    </div>
+    
+    <div class="blog_post">
+      <div><object data="blog/2.html"></object></div>
+    </div>
+    
+  </div>
+
+
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -5,5 +5,9 @@
   }, {
     "src": "images/image-two.png",
     "alt": "Image two alt text"
-  }]
+  }],
+  "posts": [
+    {"src": "blog/1.html"},
+    {"src": "blog/2.html"}
+  ]
 }

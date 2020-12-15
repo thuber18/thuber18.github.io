@@ -16,15 +16,15 @@ gulp.task('deploy', function () {
 */
 gulp.task('nunjucks', function() {
   // Gets .html and .nunjucks files in pages
-  return gulp.src('app/pages/**/*.+(html|njk)')
+  return gulp.src('docs/pages/**/*.+(html|njk)')
   // adding data to Nunjucks
   .pipe(data(function() {
-    return require('./app/data.json')
+    return require('./docs/data.json')
   }))
   // Renders template with nunjucks
   .pipe(nunjucksRender({
-      path: ['app/templates']
+      path: ['docs/templates']
     }))
-  // output files in app folder
-  .pipe(gulp.dest('app'))
+  // output files in docs folder
+  .pipe(gulp.dest('docs'))
 });

@@ -1,9 +1,46 @@
+<!-- layout.nunjucks -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Thomas Huber's Website</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1>Welcome to My Website!</h1>
+    <!-- You write code for this content block in another file -->
+    <div>
+      
+  <h1>This is the index page</h1>
+
+  
+
+  <!-- Importing Nunjucks Macro -->
+  
+  <!-- Creating the navigation with activePage = 'home' -->
+  
+<nav>
+  <a href="#" class="">Home</a>
+  <a href="#" class="">About</a>
+  <a href="#" class=" active ">Contact</a>
+</nav>
+
+
+  <div class="gallery">
+    <!-- Loops through "images" array -->
+    
+    <div class="gallery__item">
+      <img src="image-one.png" alt="Image one alt text">
+    </div>
+    
+    <div class="gallery__item">
+      <img src="image-two.png" alt="Image two alt text">
+    </div>
+    
+  </div>
+
+
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

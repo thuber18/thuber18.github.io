@@ -1,0 +1,1 @@
+The pages folder is used for storing files that will be compiled into HTML. Once they are compiled, they will be created in the app folder.

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <!-- You write code for this content block in another file -->
+    {% set activePage = activePage | default('home') %}
+    {% include "partials/navigation.njk" %}
     <div>
       {% block content %} {% endblock %}
     </div>

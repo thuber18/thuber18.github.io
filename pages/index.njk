@@ -4,12 +4,4 @@
 {% block content %}
   <h1>This is the index page</h1>
 
-  {# <!-- Adds the navigation partial -->
-  {% include "partials/navigation.njk" %} #}
-
-  <!-- Importing Nunjucks Macro -->
-  {% import 'macros/nav-macro.njk' as nav %}
-  <!-- Creating the navigation with activePage = 'home' -->
-  {{nav.active('home')}}
-
 {% endblock %}

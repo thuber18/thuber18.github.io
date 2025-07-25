@@ -1,30 +1,7 @@
 <!-- index.nunjucks -->
 {% extends "layout.njk" %}
-
+{% set activePage = 'blog' %}
 {% block content %}
-  <h1>This is the blog page</h1>
-
-  <!-- Importing Nunjucks Macro -->
-  {% import 'macros/nav-macro.njk' as nav %}
-  <!-- Creating the navigation with activePage = 'home' -->
-  {{nav.active('blog')}}
-
-  <div class="gallery">
-    <!-- Loops through "images" array -->
-    {% for image in images %}
-    <div class="gallery__item">
-      <img src="{{image.src}}" alt="{{image.alt}}">
-    </div>
-    {% endfor %}
-  </div>
-
-  <div class="blog_posts">
-    <!-- Loops through "images" array -->
-    {% for post in posts %}
-    <div class="blog_post">
-      <div><object data="{{post.src}}"></object></div>
-    </div>
-    {% endfor %}
-  </div>
-
+  <h1>Blog</h1>
+  <p>Welcome to the blog page!</p>
 {% endblock %}
